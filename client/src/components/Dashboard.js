@@ -48,7 +48,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const url = 'http://localhost:5000/api/data';
+        const url = 'https://visualization-backend-9xvh.onrender.com/api/data';
         const response = await fetch(url);
         if (!response.ok) {
           throw new Error(`API request failed with status code: ${response.status}`);
