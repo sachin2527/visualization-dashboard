@@ -945,6 +945,56 @@ transition: transform 0.3s, background-color 0.3s, filter 0.3s, z-index 0.3s;
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
+
+    @media (max-width: 1200px) {
+        .chart {
+          flex: 1 1 calc(50% - 2rem);
+          max-width: calc(50% - 2rem);
+        }
+
+        .chart.large-chart {
+          flex: 1 1 calc(100% - 2rem);
+          max-width: calc(100% - 2rem);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .chart {
+          flex: 1 1 100%;
+          max-width: 100%;
+        }
+
+        .chart.large-chart {
+          flex: 1 1 100%;
+          max-width: 100%;
+        }
+      }
+
+        @media (max-width: 480px) {
+        .filter-container {
+          flex-direction: column;
+          gap: 0.5rem;
+          padding: 0.5rem;
+        }
+
+        .filter-container label {
+          width: 100%;
+          margin-right: 0;
+        }
+
+        .filter-container select {
+          width: 100%;
+        }
+
+        .chart {
+          margin: 5px;
+          padding: 5px;
+        }
+
+        .chart h2 {
+          font-size: 1.2rem;
+        }
+      }
 `}</style>
 
 
